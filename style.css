@@ -320,6 +320,7 @@ hr {
     gap: 8px;
     color: #fff;
     font-weight: 600;
+    cursor: pointer;
        i {
         font-size: 18px;
         color: #ccccccb9;
@@ -339,6 +340,7 @@ hr {
       p {
         padding: 1px 8px;
         border-radius: 4px;
+        cursor: pointer;
       }
       p:hover{
         background-color: #66666657;
@@ -363,6 +365,7 @@ hr {
     gap: 22px;
     color: #ccc;
     font-size: 21px;
+    cursor: pointer;
     i:hover {
         color:#fff;
     }
@@ -412,6 +415,7 @@ hr {
     align-items: center;
     font-size: 11px;
     margin: 30px 0 30px 0;
+    cursor: pointer;
       hr {
         width: 8px;
         height: 1px;
@@ -450,6 +454,7 @@ hr {
     bottom: 10px;
     left: 30px;
     border: 2px solid #2F3136;
+    cursor: pointer;
 } 
 
 .friend-icons {
@@ -457,6 +462,7 @@ hr {
     gap: 30px;
     font-size: 20px;
     color: #ccc;
+    cursor: pointer;
       i{
         background-color: rgba(0,0,0,0.1);
         border-radius: 50%;
@@ -479,10 +485,12 @@ hr {
     :first-child {
         color: #fff;
         font-weight: 600;
+        cursor: pointer;
     }
     :last-child {
         color: #ccc;
         font-size: 12px;
+        cursor: pointer;
     }
 }
 .user-name {
@@ -493,6 +501,7 @@ hr {
     line-height: 20px;
     margin-left: -10px;
     opacity: 0;
+    cursor: pointer;
 }
 .online-friends:hover .user-name {
     opacity: 1;
