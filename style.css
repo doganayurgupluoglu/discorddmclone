@@ -226,6 +226,7 @@ hr {
     display: flex;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 
     img {
         min-width: 30px;
@@ -234,6 +235,7 @@ hr {
         max-height: 30px;
         object-fit: cover;
         border-radius: 50%;
+        
     }
 }
 .status-indicator {
@@ -245,6 +247,7 @@ hr {
     bottom: -2px;
     right: 20px;
     border: 2px solid #2F3136;
+    cursor: pointer;
 } 
 .user {
     color: #fff;
@@ -254,6 +257,7 @@ hr {
 }
 .user p:first-child {
     margin-bottom: 15px;
+    cursor: pointer;
 }
 .user p:nth-child(2) {
     font-size: 11px;
@@ -261,6 +265,7 @@ hr {
     position: absolute;
     transition: all 0.3s;
     bottom: 0;
+    cursor: pointer;
 }
 .avatar {
     width: 50%;
@@ -278,6 +283,7 @@ hr {
     bottom: -5px;
     opacity: 0;
     transition: all 0.3s;
+    cursor: pointer;
 }   
 }
 .user-control:hover .user p:last-child {
@@ -296,6 +302,7 @@ hr {
     gap: 0px;
     color: #ffffffb2;
     font-size: 17px;
+    cursor: pointer;
     :first-child {
         color: red;
     }
