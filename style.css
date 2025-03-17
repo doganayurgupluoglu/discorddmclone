@@ -164,6 +164,7 @@ hr {
     background-color: #cccccc21;
     padding: 10px 10px;
     border-radius: 5px;
+    cursor: pointer;
     &:hover {
         background-color: #534e4e42;
     }
@@ -178,6 +179,7 @@ hr {
     color: #c0c0c0;
     padding: 10px 10px;
     border-radius: 5px;
+    cursor: pointer;
     &:hover {
         background-color: #4e4e4e73;
     }
