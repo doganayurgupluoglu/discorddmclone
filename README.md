@@ -1,3 +1,4 @@
+![Ekran Görüntüsü](img/ss.png)
 # Discord Arayüz Klonu - HTML & CSS Pratiği
 
 Bu proje, Discord'un arayüzünü HTML ve CSS kullanarak yeniden oluşturmayı hedefleyen bir çalışma projesidir. Sadece eğitim ve pratik amaçlı olarak geliştirilmiştir.
