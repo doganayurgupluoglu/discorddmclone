@@ -1,282 +1,277 @@
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .container {
-   display: flex;
+  display: flex;
 }
 
 .servers {
-    width: 72px;
-    height: 100vh;
-    background-color: #1E1F22;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 72px;
+  height: 100vh;
+  background-color: #1e1f22;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .dms {
-    display: flex;
-    flex-direction: column;
-    width: 240px;
-    height: 100vh;
-    background-color: #2B2D31;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 100vh;
+  background-color: #2b2d31;
 }
 .onlines {
-    flex: 1;
-    height: 100vh;
-    background-color: #313338;
-
-    
+  flex: 1;
+  height: 100vh;
+  background-color: #313338;
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #5865F2;
-    border-radius: 30%;
-    width: 45px;
-    min-height: 45px;
-    margin-top: 10px;
-    transition: all 0.3s;
-    cursor: pointer;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5865f2;
+  border-radius: 30%;
+  width: 45px;
+  min-height: 45px;
+  margin-top: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+  position: relative;
 }
 hr {
-    width: 45%;
-    margin-top: 7px;
-    border: none;
-    height: 2px;
-    background-color: rgba(255,255,255,0.1);
-    border-radius: 1px;
-    margin-bottom: 5px;
+  width: 45%;
+  margin-top: 12px;
+  border: none;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 1px;
+  margin-bottom: 10px;
 }
 .indicator {
-    width: 5px;
-    height: 35px;
-    background-color: #fff;
-    border-radius: 5px;
-    position: absolute;
-    left: -15px;
-}   
+  width: 5px;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: -15px;
+}
 
 .server {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2px;
-    scrollbar-width: none;
-    overflow: scroll;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  scrollbar-width: none;
+  overflow: scroll;
+  width: 100%;
 }
 .server1 img {
-    border-radius: 50%;
-    transition: all 0.3s;
-    cursor: pointer;
-    &:hover {
-        border-radius: 30%;
-    }
+  border-radius: 50%;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    border-radius: 30%;
+  }
 }
 
 .server1 {
-    position: relative;
-    width: 100%;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .indicator-server {
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    border-radius: 5px;
-    position: absolute;
-    left: -5px;
-    transform: translateY(-50%);
-    top: 40%;
-    transition: all 0.3s;
-}   
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: -5px;
+  transform: translateY(-50%);
+  top: 40%;
+  transition: all 0.3s;
+}
 
 .server1:hover .indicator-server {
-    height: 20px !important;
+  height: 20px !important;
 }
 .bildirim {
-    position: absolute;
-    width: auto;
-    height: 15px;
-    background-color: red;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    border-radius: 15px;
-    font-size: 12px;
-    bottom: -2px;
-    cursor: pointer;
-    right: 10px;
-    border: 4px solid #1E1F22;
-        p{
-            padding: 4.1px;
-            margin-bottom: 1px;
-        }
+  position: absolute;
+  width: auto;
+  height: 15px;
+  background-color: red;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border-radius: 15px;
+  font-size: 12px;
+  bottom: -2px;
+  cursor: pointer;
+  right: 10px;
+  border: 4px solid #1e1f22;
+  p {
+    padding: 4.1px;
+    margin-bottom: 1px;
+  }
 }
-
 
 .topbar {
-    height: 48px;
-    border-bottom: 1px solid #1E1F22;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    input {
-        background-color: #1E1F22;
-        color: #c0c0c0;
-        border: none;
-        width: 90%;
-        font-weight: 600;
-        border-radius: 4px;
-        padding: 5px 5px;
-        &:focus {
-            outline: none;
-        }
+  height: 48px;
+  border-bottom: 1px solid #1e1f22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  input {
+    background-color: #1e1f22;
+    color: #c0c0c0;
+    border: none;
+    width: 90%;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 5px 5px;
+    &:focus {
+      outline: none;
     }
+  }
 }
 .dm {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10px;
-    margin-top: 8px;
-    overflow: scroll;
-    scrollbar-width: none;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  margin-top: 8px;
+  overflow: scroll;
+  scrollbar-width: none;
+  flex: 1;
 }
-.messages-active{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #fff;
-    background-color: #cccccc21;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    &:hover {
-        background-color: #534e4e42;
-    }
-
+.messages-active {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #cccccc21;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #534e4e42;
+  }
 }
 .messages {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #c0c0c0;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    &:hover {
-        background-color: #4e4e4e73;
-    }
-    img {
-        border-radius: 50%;
-        object-fit: cover;
-        width: 30px;
-        height: 30px;
-    }
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #c0c0c0;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #4e4e4e73;
+  }
+  img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .direct-messages {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 11px;
-    line-height: 18px;
-    font-weight: 600;
-    color: #c0c0c0;
-    cursor: pointer;
-       &:hover {
-        color: #fff;
-       }
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #c0c0c0;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
 }
 .plus {
-    color: #c0c0c0;
-    font-size: 18px;
-    font-weight: 600;
+  color: #c0c0c0;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .user-control {
-    height: 53px;
-    background-color: #212225;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-
+  height: 53px;
+  background-color: #212225;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .avatar-image {
-    width: 50%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+  width: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 
-    img {
-        min-width: 30px;
-        min-height: 30px;
-        max-width: 30px;
-        max-height: 30px;
-        object-fit: cover;
-        border-radius: 50%;
-        
-    }
+  img {
+    min-width: 30px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 }
 .status-indicator {
-    width: 10px;
-    height: 10px;
-    background-color: #43B581;
-    border-radius: 50%;
-    position: absolute;
-    bottom: -2px;
-    right: 20px;
-    border: 2px solid #2F3136;
-    cursor: pointer;
-} 
+  width: 10px;
+  height: 10px;
+  background-color: #43b581;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  right: 20px;
+  border: 2px solid #2f3136;
+  cursor: pointer;
+}
 .user {
-    color: #fff;
-    font-size: 13px;
-    font-weight: 600;
-    position: relative;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  position: relative;
 }
 .user p:first-child {
-    margin-bottom: 15px;
-    cursor: pointer;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 .user p:nth-child(2) {
-    font-size: 11px;
-    color: #ccc;
-    position: absolute;
-    transition: all 0.3s;
-    bottom: 0;
-    cursor: pointer;
+  font-size: 11px;
+  color: #ccc;
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  cursor: pointer;
 }
 .avatar {
-    width: 50%;
-    padding: 4px;
-    border-radius: 5px;
-    position: relative;
+  width: 50%;
+  padding: 4px;
+  border-radius: 5px;
+  position: relative;
 
-&:hover {
+  &:hover {
     background-color: #ffffff0e;
-}
-.user p:last-child {
+  }
+  .user p:last-child {
     position: absolute;
     font-size: 11px;
     color: #ccc;
@@ -284,234 +279,231 @@ hr {
     opacity: 0;
     transition: all 0.3s;
     cursor: pointer;
-}   
+  }
 }
 .user-control:hover .user p:last-child {
-    opacity: 1;
-    bottom: 0;
+  opacity: 1;
+  bottom: 0;
 }
 .user-control:hover .user p:nth-child(2) {
-    opacity: 0;
-    bottom: 5px;
+  opacity: 0;
+  bottom: 5px;
 }
 .control-buttons {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0px;
-    color: #ffffffb2;
-    font-size: 17px;
-    cursor: pointer;
-    :first-child {
-        color: red;
-    }
-    i {
-        padding: 8px 8px;
-        border-radius: 5px;
-    }
-    i:hover {
-        background-color: #ffffff0e;
-    }
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  color: #ffffffb2;
+  font-size: 17px;
+  cursor: pointer;
+  :first-child {
+    color: red;
+  }
+  i {
+    padding: 8px 8px;
+    border-radius: 5px;
+  }
+  i:hover {
+    background-color: #ffffff0e;
+  }
 }
 .o-topbar {
-    height: 48px;
-    border-bottom: 1px solid #1E1F22;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-
+  height: 48px;
+  border-bottom: 1px solid #1e1f22;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 .friend-icon {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-       i {
-        font-size: 18px;
-        color: #ccccccb9;
-       }
-       hr {
-        width: 1px;
-        height: 22px;
-        margin: 0 8px;
-        color: #ffffffb2;
-      }
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  i {
+    font-size: 18px;
+    color: #ccccccb9;
+  }
+  hr {
+    width: 1px;
+    height: 22px;
+    margin: 0 8px;
+    color: #ffffffb2;
+  }
 }
 
 .nav {
-    display: flex;
-    gap: 15px;
-    color: #CCC;
-      p {
-        padding: 1px 8px;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      p:hover{
-        background-color: #66666657;
-      }
-      :first-child {
-        color: #fff;
-        background-color: #ffffff28;
-      }
-      :last-child {
-        color: #fff;
-        background-color: #248045;
-        font-weight: 600;
-        cursor: pointer;
-         &:hover {
-            background-color: #248045 ;
-         }
-      }
+  display: flex;
+  gap: 15px;
+  color: #ccc;
+  p {
+    padding: 1px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  p:hover {
+    background-color: #66666657;
+  }
+  :first-child {
+    color: #fff;
+    background-color: #ffffff28;
+  }
+  :last-child {
+    color: #fff;
+    background-color: #248045;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      background-color: #248045;
+    }
+  }
 }
 
 .icons {
-    display:flex;
-    gap: 22px;
-    color: #ccc;
-    font-size: 21px;
-    cursor: pointer;
-    i:hover {
-        color:#fff;
-    }
+  display: flex;
+  gap: 22px;
+  color: #ccc;
+  font-size: 21px;
+  cursor: pointer;
+  i:hover {
+    color: #fff;
+  }
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 20px;
-    align-items: center;
-    gap: 0px;
-    input {
-        box-sizing: border-box;
-        background-color: #1E1F22;
-        color: #c0c0c0;
-        border: none;
-        line-height: 25px;
-        width: 100%;
-        font-size: 15px;
-        font-weight: 500;
-        border-radius: 4px;
-        padding: 5px 50px 5px 7px;
-        &:focus {
-            outline: none;
-        }
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 0px;
+  input {
+    box-sizing: border-box;
+    background-color: #1e1f22;
+    color: #c0c0c0;
+    border: none;
+    line-height: 25px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px 50px 5px 7px;
+    &:focus {
+      outline: none;
     }
+  }
 }
 .ara {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 .ara i {
-    position: absolute;
-    z-index: 10;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #ccc;
-    font-size: 16px;
-    cursor: pointer;
+  position: absolute;
+  z-index: 10;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .cevrim-ici {
-    width: 100%;
-    display: flex;
-    color: #ccc;
-    align-items: center;
-    font-size: 11px;
-    margin: 30px 0 30px 0;
-    cursor: pointer;
-      hr {
-        width: 8px;
-        height: 1px;
-        background-color: #ccc;
-        border: none;
-        margin: 0 5px;
-      }
-
+  width: 100%;
+  display: flex;
+  color: #ccc;
+  align-items: center;
+  font-size: 11px;
+  margin: 30px 0 30px 0;
+  cursor: pointer;
+  hr {
+    width: 8px;
+    height: 1px;
+    background-color: #ccc;
+    border: none;
+    margin: 0 5px;
+  }
 }
 
 .online-friends {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-    border-top: 1px solid #97979717;
-    padding: 10px 10px;
-      img {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-      }
-      &:hover {
-        background-color: #97979717;
-        border-radius: 10px;
-        
-      }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  border-top: 1px solid #97979717;
+  padding: 10px 10px;
+  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  &:hover {
+    background-color: #97979717;
+    border-radius: 10px;
+  }
 }
 .online-indicator {
-    width: 10px;
-    height: 10px;
-    background-color: #43B581;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 10px;
-    left: 30px;
-    border: 2px solid #2F3136;
-    cursor: pointer;
-} 
+  width: 10px;
+  height: 10px;
+  background-color: #43b581;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  border: 2px solid #2f3136;
+  cursor: pointer;
+}
 
 .friend-icons {
-    display: flex;
-    gap: 30px;
-    font-size: 20px;
-    color: #ccc;
-    cursor: pointer;
-      i{
-        background-color: rgba(0,0,0,0.1);
-        border-radius: 50%;
-        line-height: 40px;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        &:hover {
-            color: #fff;
-        }
-      }
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+  i {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    &:hover {
+      color: #fff;
+    }
+  }
 }
 
 .friend-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 .friend-name {
-    :first-child {
-        color: #fff;
-        font-weight: 600;
-        cursor: pointer;
-    }
-    :last-child {
-        color: #ccc;
-        font-size: 12px;
-        cursor: pointer;
-    }
+  :first-child {
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  :last-child {
+    color: #ccc;
+    font-size: 12px;
+    cursor: pointer;
+  }
 }
 .user-name {
-    color: #ccc;
-    font-weight: 400;
-    font-size: 12px;
-    align-self: start;
-    line-height: 20px;
-    margin-left: -10px;
-    opacity: 0;
-    cursor: pointer;
+  color: #ccc;
+  font-weight: 400;
+  font-size: 12px;
+  align-self: start;
+  line-height: 20px;
+  margin-left: -10px;
+  opacity: 0;
+  cursor: pointer;
 }
 .online-friends:hover .user-name {
-    opacity: 1;
+  opacity: 1;
 }
